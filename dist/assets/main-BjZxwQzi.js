@@ -1,4 +1,4 @@
-(function(){let e=document.createElement(`link`).relList;if(e&&e.supports&&e.supports(`modulepreload`))return;for(let e of document.querySelectorAll(`link[rel="modulepreload"]`))n(e);new MutationObserver(e=>{for(let t of e)if(t.type===`childList`)for(let e of t.addedNodes)e.tagName===`LINK`&&e.rel===`modulepreload`&&n(e)}).observe(document,{childList:!0,subtree:!0});function t(e){let t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),t.credentials=e.crossOrigin===`use-credentials`?`include`:e.crossOrigin===`anonymous`?`omit`:`same-origin`,t}function n(e){if(e.ep)return;e.ep=!0;let n=t(e);fetch(e.href,n)}})();var e=`АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+`;function t(t){if(t.dataset.decrypting===`true`)return;t.dataset.decrypting=`true`;let n=t.getAttribute(`data-text`)||t.textContent.trim(),r=n.length,i=0,a=0,o=setInterval(()=>{let s=``;for(let t=0;t<r;t++)t<i?s+=n[t]:n[t]===` `?s+=` `:s+=e[Math.floor(Math.random()*81)];t.textContent=s,a++,a%2==0&&i++,i>r&&(clearInterval(o),t.textContent=n,t.dataset.decrypting=`false`)},35)}function n(){document.querySelectorAll(`.section-heading-cipher`).forEach(e=>{t(e),e.addEventListener(`mouseenter`,()=>t(e))})}var r={"/":`
+(function(){let e=document.createElement(`link`).relList;if(e&&e.supports&&e.supports(`modulepreload`))return;for(let e of document.querySelectorAll(`link[rel="modulepreload"]`))n(e);new MutationObserver(e=>{for(let t of e)if(t.type===`childList`)for(let e of t.addedNodes)e.tagName===`LINK`&&e.rel===`modulepreload`&&n(e)}).observe(document,{childList:!0,subtree:!0});function t(e){let t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),t.credentials=e.crossOrigin===`use-credentials`?`include`:e.crossOrigin===`anonymous`?`omit`:`same-origin`,t}function n(e){if(e.ep)return;e.ep=!0;let n=t(e);fetch(e.href,n)}})();var e=`АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+`;function t(t){if(t.dataset.decrypting===`true`)return;t.dataset.decrypting=`true`;let n=t.getAttribute(`data-text`)||t.textContent.trim(),r=n.length,i=0,a=0,o=setInterval(()=>{let s=``;for(let t=0;t<r;t++)t<i?s+=n[t]:n[t]===` `?s+=` `:s+=e[Math.floor(Math.random()*81)];t.textContent=s,a++,a%2==0&&i++,i>r&&(clearInterval(o),t.textContent=n,t.dataset.decrypting=`false`)},35)}function n(){document.querySelectorAll(`.section-heading-cipher, .cipher-title`).forEach(e=>{t(e),e.addEventListener(`mouseenter`,()=>t(e))})}var r={"/":`
     <section class="page-section mb-12">
       <span class="section-heading-cipher" data-text="привет,">привет,</span>
       <div class="space-y-8">
@@ -20,7 +20,7 @@
           <p class="text-body-p">
             <a href="/cases/uiren-go" class="font-medium site-link">Uiren Go</a>
           </p>
-          <p class="text-subtle-p">Edtech-платформа для репетиторства.</p>
+          <p class="text-subtle-p">Платформа для поиска репетиторов и учебных центров</p>
           <p class="text-subtle-p" style="opacity: 0.8;">Роль: Middle Product Designer / Brand Designer</p>
         </div>
 
@@ -28,7 +28,7 @@
           <p class="text-body-p">
             <a href="/cases/spichka" class="font-medium site-link">Спичка</a>
           </p>
-          <p class="text-subtle-p">Приложение-агрегатор билетов на камерные события Алматы.</p>
+          <p class="text-subtle-p">Билетный агрегатор камерных событий</p>
           <p class="text-subtle-p" style="opacity: 0.8;">Роль: Junior Product Designer</p>
         </div>
 
@@ -36,7 +36,7 @@
           <p class="text-body-p">
             <a href="/cases/leadership-academy" class="font-medium site-link">Академия Лидерства</a>
           </p>
-          <p class="text-subtle-p">Сайт детской школы лидерства в Алматы.</p>
+          <p class="text-subtle-p">Лендинг для лагеря лидерских качеств</p>
           <p class="text-subtle-p" style="opacity: 0.8;">Роль: UX/UI Design, фриланс</p>
         </div>
 
@@ -44,44 +44,64 @@
           <p class="text-body-p">
             <a href="/cases/good-restaurants" class="font-medium site-link">Good Restaurants</a>
           </p>
-          <p class="text-subtle-p">Сайт группы из 4 ресторанов Алматы: Хороший Год, Percorso, Benedict, Benedict Mix.</p>
+          <p class="text-subtle-p">Единый сайт для четырёх ресторанов</p>
           <p class="text-subtle-p" style="opacity: 0.8;">Роль: UX/UI Design, фриланс</p>
         </div>
       </div>
     </section>
   `,"/cases":`
-    <section class="page-section mb-12">
+    <section class="page-section mb-12 page--cases">
       <span class="section-heading-cipher" data-text="Кейсы">Кейсы</span>
-      <div class="grid-gap-6">
-        <a href="/cases/uiren-go" class="project-card-item">
-          <h3 class="project-card-title site-link">Uiren Go</h3>
-          <p class="project-card-desc">Edtech-платформа для репетиторства.</p>
-          <p class="project-card-role">Роль: Middle Product Designer / Brand Designer</p>
+      <div class="cases-feed">
+        <a href="/cases/uiren-go" class="case-card">
+          <div class="case-card-banner">
+            <img src="/uiren-go/banner.png" alt="Uiren Go" loading="lazy" />
+          </div>
+          <div class="case-card-info">
+            <h3 class="case-card-title">Uiren Go</h3>
+            <p class="case-card-desc">Платформа для поиска репетиторов и учебных центров</p>
+            <p class="case-card-role">Роль: Middle Product Designer / Brand Designer</p>
+          </div>
         </a>
 
-        <a href="/cases/spichka" class="project-card-item">
-          <h3 class="project-card-title site-link">Спичка</h3>
-          <p class="project-card-desc">Приложение-агрегатор билетов на камерные события Алматы.</p>
-          <p class="project-card-role">Роль: Junior Product Designer</p>
+        <a href="/cases/spichka" class="case-card">
+          <div class="case-card-banner">
+            <img src="/spichka/banner.png" alt="Спичка" loading="lazy" />
+          </div>
+          <div class="case-card-info">
+            <h3 class="case-card-title">Спичка</h3>
+            <p class="case-card-desc">Билетный агрегатор камерных событий</p>
+            <p class="case-card-role">Роль: Junior Product Designer</p>
+          </div>
         </a>
 
-        <a href="/cases/leadership-academy" class="project-card-item">
-          <h3 class="project-card-title site-link">Академия Лидерства</h3>
-          <p class="project-card-desc">Сайт детской школы лидерства в Алматы.</p>
-          <p class="project-card-role">Роль: UX/UI Design, фриланс</p>
+        <a href="/cases/leadership-academy" class="case-card">
+          <div class="case-card-banner">
+            <img src="/leadership-academy/banner.png" alt="Академия Лидерства" loading="lazy" />
+          </div>
+          <div class="case-card-info">
+            <h3 class="case-card-title">Академия Лидерства</h3>
+            <p class="case-card-desc">Лендинг для лагеря лидерских качеств</p>
+            <p class="case-card-role">Роль: UX/UI Design, фриланс</p>
+          </div>
         </a>
 
-        <a href="/cases/good-restaurants" class="project-card-item">
-          <h3 class="project-card-title site-link">Good Restaurants</h3>
-          <p class="project-card-desc">Сайт группы из 4 ресторанов Алматы: Хороший Год, Percorso, Benedict, Benedict Mix.</p>
-          <p class="project-card-role">Роль: UX/UI Design, фриланс</p>
+        <a href="/cases/good-restaurants" class="case-card">
+          <div class="case-card-banner">
+            <img src="/good-restaurants/banner.png" alt="Good Restaurants" loading="lazy" />
+          </div>
+          <div class="case-card-info">
+            <h3 class="case-card-title">Good Restaurants</h3>
+            <p class="case-card-desc">Единый сайт для четырёх ресторанов</p>
+            <p class="case-card-role">Роль: UX/UI Design, фриланс</p>
+          </div>
         </a>
       </div>
     </section>
   `,"/cases/uiren-go":`
     <article class="page--case">
-      <h1 class="title">Uiren Go</h1>
-      <p class="case-date">2025 – 2026</p>
+      <h1 class="title cipher-title" data-text="Uiren Go">Uiren Go</h1>
+      <p class="case-date">Платформа для поиска репетиторов и учебных центров</p>
 
       <div class="case-flow">
         <div class="case-media case-media--single">
@@ -167,7 +187,8 @@
     </article>
   `,"/cases/spichka":`
     <article class="page--case">
-      <h1 class="title">Спичка</h1>
+      <h1 class="title cipher-title" data-text="Спичка">Спичка</h1>
+      <p class="case-date">Билетный агрегатор камерных событий</p>
 
       <div class="case-flow">
         <div class="case-media case-media--single">
@@ -235,31 +256,74 @@
       </nav>
     </article>
   `,"/cases/leadership-academy":`
-    <section class="page-section mb-12">
-      <span class="section-heading-cipher" data-text="Академия Лидерства">Академия Лидерства</span>
-      <div class="space-y-8">
-        <div class="space-y-2">
-          <p class="text-body-p font-medium">Сайт детской школы лидерства в Алматы.</p>
-          <p class="text-subtle-p">Роль: UX/UI Design, фриланс</p>
+    <article class="page--case">
+      <h1 class="title cipher-title" data-text="Академия Лидерства">Академия Лидерства</h1>
+      <p class="case-date">Лендинг для лагеря лидерских качеств</p>
+
+      <div class="case-flow">
+        <div class="case-media case-media--single">
+          <div class="case-shot">
+            <img src="/leadership-academy/banner.png" alt="Академия Лидерства" />
+          </div>
         </div>
 
-        <p class="text-body-p">
-          Разработка структуры и дизайна сайта для родителей школьников: понятная презентация образовательных модулей (soft skills, ораторское искусство, финансовая грамотность).
-        </p>
+        <dl class="case-facts">
+          <div class="case-fact">
+            <dt>Аудитория</dt>
+            <dd><p class="body">Родители, которые выбирают лагерь, где ребёнок или подросток развивает лидерские качества и другие навыки.</p></dd>
+          </div>
+          <div class="case-fact">
+            <dt>Задача</dt>
+            <dd><p class="body">Заказчику нужен был лендинг, чтобы показать услуги лагеря и привлечь родителей к продукту.</p></dd>
+          </div>
+          <div class="case-fact">
+            <dt>Роль</dt>
+            <dd>
+              <ul class="case-list">
+                <li class="body">С нуля спроектировал дизайн лендинга.</li>
+                <li class="body">Провёл интервью с заказчиком, разобрал конкурентов и провёл ресёрч.</li>
+                <li class="body">Передал утверждённый дизайн разработчику на вёрстку.</li>
+              </ul>
+            </dd>
+          </div>
+        </dl>
 
-        <p class="text-body-p">
-          Интуитивный выбор программы по возрасту ребенка и удобная форма записи на пробный открытый урок, повысившая конверсию первичных обращений.
-        </p>
+        <section class="case-story">
+          <h2 class="case-heading">Контекст и старт</h2>
+          <p class="body">Работа началась с интервью с заказчиком. Они сами прислали конкурентов, а дальше я погрузился в их разбор и исследование, чтобы понять, чем лагерь может выделиться.</p>
+        </section>
 
-        <nav class="case-end">
-          <a href="/cases">← Все проекты</a>
-          <a href="/cases/good-restaurants" class="case-end-next">К Good Restaurants →</a>
-        </nav>
+        <div class="case-media case-media--single">
+          <div class="case-shot">
+            <img src="/leadership-academy/qualities.png" alt="Академия Лидерства — программы и качества" />
+          </div>
+        </div>
+
+        <section class="case-story">
+          <h2 class="case-heading">Концепция и дизайн</h2>
+          <p class="body">Главный акцент я сделал на доверии: родителям важно увидеть, что происходит с ребёнком. Поэтому показал фото детей из лагеря и то, чем они там занимаются, а также отзывы родителей.</p>
+        </section>
+
+        <div class="case-media case-media--single">
+          <div class="case-shot">
+            <img src="/leadership-academy/programs.jpg" alt="Академия Лидерства — ступени программ" />
+          </div>
+        </div>
+
+        <section class="case-story">
+          <h2 class="case-heading">Результат</h2>
+          <p class="body">Лендинг запущен. Версия, которую утвердил заказчик, отличается от показанной здесь: этот дизайн я сделал сам для портфолио, поэтому ссылки на живой сайт в кейсе нет.</p>
+        </section>
       </div>
-    </section>
+
+      <nav class="case-end">
+        <a href="/cases">← Все проекты</a>
+        <a href="/cases/good-restaurants" class="case-end-next">К Good Restaurants →</a>
+      </nav>
+    </article>
   `,"/cases/good-restaurants":`
     <article class="page--case">
-      <h1 class="title">Good Restaurants</h1>
+      <h1 class="title cipher-title" data-text="Good Restaurants">Good Restaurants</h1>
       <p class="case-date">Единый сайт для четырёх ресторанов</p>
 
       <div class="case-flow">
@@ -333,4 +397,4 @@
         <p>Локация: Алматы, Казахстан</p>
       </div>
     </section>
-  `};function i(e){let t=e.replace(/\/index\.html$/,``).replace(/\/$/,``);return t===``?`/`:t}function a(e,t=!0){let a=i(e),s=r[a]||r[`/`],c=document.getElementById(`pageContent`);c&&(c.innerHTML=s),t&&window.location.pathname!==a&&window.history.pushState(null,``,a),window.scrollTo({top:0,behavior:`instant`}),o(a),n()}function o(e){let t=document.getElementById(`casesMenuGroup`),n=e.startsWith(`/cases`);n?t?.classList.add(`open`):t?.classList.contains(`pinned`)||t?.classList.remove(`open`),document.querySelectorAll(`.desktop-nav-link`).forEach(t=>{let r=t.getAttribute(`data-route`);r===`/cases`&&n||r===e?t.classList.add(`active`):t.classList.remove(`active`)}),document.querySelectorAll(`.cases-sublink`).forEach(t=>{t.getAttribute(`data-route`)===e?t.classList.add(`active`):t.classList.remove(`active`)}),document.querySelectorAll(`.mobile-nav-link`).forEach(t=>{let r=t.getAttribute(`data-route`);r===`/cases`&&n||r===e?t.classList.add(`active`):t.classList.remove(`active`)});let r=document.getElementById(`mobileCasesDrawer`);n?r?.classList.add(`open`):r?.classList.remove(`open`),document.querySelectorAll(`.mobile-sub-link`).forEach(t=>{t.getAttribute(`data-route`)===e?t.classList.add(`active`):t.classList.remove(`active`)})}function s(){document.body.addEventListener(`click`,e=>{let t=e.target.closest(`a`);if(!t)return;let n=t.getAttribute(`href`),r=t.getAttribute(`target`);if(!(!n||r===`_blank`||n.startsWith(`mailto:`)||n.startsWith(`http`))){if(t.id===`casesParentBtn`){let e=document.getElementById(`casesMenuGroup`);e?.classList.toggle(`open`),e?.classList.toggle(`pinned`)}n.startsWith(`/`)&&(e.preventDefault(),a(n,!0))}}),document.getElementById(`mobileCasesLink`)?.addEventListener(`click`,e=>{document.getElementById(`mobileCasesDrawer`)?.classList.toggle(`open`)}),window.addEventListener(`popstate`,()=>{a(window.location.pathname,!1)})}function c(){let e=document.getElementById(`themeToggleGroup`),t=document.getElementById(`mobileThemeToggleGroup`),n=document.getElementById(`darkOpt`),r=document.getElementById(`lightOpt`),i=document.getElementById(`mobileDarkOpt`),a=document.getElementById(`mobileLightOpt`),o=document.querySelector(`meta[name="theme-color"]`);function s(e){e?(document.documentElement.classList.add(`dark`),o?.setAttribute(`content`,`#181818`),n?.classList.add(`active`),r?.classList.remove(`active`),i?.classList.add(`active`),a?.classList.remove(`active`),localStorage.setItem(`theme`,`dark`)):(document.documentElement.classList.remove(`dark`),o?.setAttribute(`content`,`#ffffff`),r?.classList.add(`active`),n?.classList.remove(`active`),a?.classList.add(`active`),i?.classList.remove(`active`),localStorage.setItem(`theme`,`light`))}let c=localStorage.getItem(`theme`);s(!c||c===`dark`);function l(e){s(e)}function u(){s(!document.documentElement.classList.contains(`dark`))}n?.addEventListener(`click`,e=>{e.stopPropagation(),l(!0)}),r?.addEventListener(`click`,e=>{e.stopPropagation(),l(!1)}),e?.addEventListener(`click`,u),i?.addEventListener(`click`,e=>{e.stopPropagation(),l(!0)}),a?.addEventListener(`click`,e=>{e.stopPropagation(),l(!1)}),t?.addEventListener(`click`,u)}document.addEventListener(`DOMContentLoaded`,()=>{c(),s(),a(window.location.pathname,!1)});
+  `};function i(e){let t=e.replace(/\/index\.html$/,``).replace(/\/$/,``);return t===``?`/`:t}function a(e,t=!0){let a=i(e),s=r[a]||r[`/`],c=document.getElementById(`pageContent`);c&&(c.innerHTML=s),t&&window.location.pathname!==a&&window.history.pushState(null,``,a),window.scrollTo({top:0,behavior:`instant`}),o(a),n()}function o(e){let t=e.startsWith(`/cases`);document.querySelectorAll(`.desktop-nav-link`).forEach(n=>{let r=n.getAttribute(`data-route`);r===`/cases`&&t||r===e?n.classList.add(`active`):n.classList.remove(`active`)}),document.querySelectorAll(`.mobile-nav-link`).forEach(n=>{let r=n.getAttribute(`data-route`);r===`/cases`&&t||r===e?n.classList.add(`active`):n.classList.remove(`active`)})}function s(){document.body.addEventListener(`click`,e=>{let t=e.target.closest(`a`);if(!t)return;let n=t.getAttribute(`href`),r=t.getAttribute(`target`);!n||r===`_blank`||n.startsWith(`mailto:`)||n.startsWith(`http`)||n.startsWith(`/`)&&(e.preventDefault(),a(n,!0))}),window.addEventListener(`popstate`,()=>{a(window.location.pathname,!1)})}function c(){let e=document.getElementById(`themeToggleGroup`),t=document.getElementById(`mobileThemeToggleGroup`),n=document.getElementById(`darkOpt`),r=document.getElementById(`lightOpt`),i=document.getElementById(`mobileDarkOpt`),a=document.getElementById(`mobileLightOpt`),o=document.querySelector(`meta[name="theme-color"]`);function s(e){e?(document.documentElement.classList.add(`dark`),o?.setAttribute(`content`,`#181818`),n?.classList.add(`active`),r?.classList.remove(`active`),i?.classList.add(`active`),a?.classList.remove(`active`),localStorage.setItem(`theme`,`dark`)):(document.documentElement.classList.remove(`dark`),o?.setAttribute(`content`,`#ffffff`),r?.classList.add(`active`),n?.classList.remove(`active`),a?.classList.add(`active`),i?.classList.remove(`active`),localStorage.setItem(`theme`,`light`))}let c=localStorage.getItem(`theme`);s(!c||c===`dark`);function l(e){s(e)}function u(){s(!document.documentElement.classList.contains(`dark`))}n?.addEventListener(`click`,e=>{e.stopPropagation(),l(!0)}),r?.addEventListener(`click`,e=>{e.stopPropagation(),l(!1)}),e?.addEventListener(`click`,u),i?.addEventListener(`click`,e=>{e.stopPropagation(),l(!0)}),a?.addEventListener(`click`,e=>{e.stopPropagation(),l(!1)}),t?.addEventListener(`click`,u)}document.addEventListener(`DOMContentLoaded`,()=>{c(),s(),a(window.location.pathname,!1)});
