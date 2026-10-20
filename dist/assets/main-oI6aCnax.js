@@ -18,7 +18,7 @@
       <div class="space-y-4">
         <div>
           <p class="text-body-p">
-            <a href="/cases/uiren-go" class="font-medium site-link">Uiren Go</a>
+            <a href="/cases/uiren-go" class="font-medium site-link" data-preview="/uiren-go/banner.png">Uiren Go</a>
           </p>
           <p class="text-subtle-p">Платформа для поиска репетиторов и учебных центров</p>
           <p class="text-subtle-p" style="opacity: 0.8;">Роль: Middle Product Designer / Brand Designer</p>
@@ -26,7 +26,7 @@
 
         <div>
           <p class="text-body-p">
-            <a href="/cases/spichka" class="font-medium site-link">Спичка</a>
+            <a href="/cases/spichka" class="font-medium site-link" data-preview="/spichka/banner.png">Спичка</a>
           </p>
           <p class="text-subtle-p">Билетный агрегатор камерных событий</p>
           <p class="text-subtle-p" style="opacity: 0.8;">Роль: Junior Product Designer</p>
@@ -34,7 +34,7 @@
 
         <div>
           <p class="text-body-p">
-            <a href="/cases/leadership-academy" class="font-medium site-link">Академия Лидерства</a>
+            <a href="/cases/leadership-academy" class="font-medium site-link" data-preview="/leadership-academy/banner.png">Академия Лидерства</a>
           </p>
           <p class="text-subtle-p">Лендинг для лагеря лидерских качеств</p>
           <p class="text-subtle-p" style="opacity: 0.8;">Роль: UX/UI Design, фриланс</p>
@@ -42,7 +42,7 @@
 
         <div>
           <p class="text-body-p">
-            <a href="/cases/good-restaurants" class="font-medium site-link">Good Restaurants</a>
+            <a href="/cases/good-restaurants" class="font-medium site-link" data-preview="/good-restaurants/banner.png">Good Restaurants</a>
           </p>
           <p class="text-subtle-p">Единый сайт для четырёх ресторанов</p>
           <p class="text-subtle-p" style="opacity: 0.8;">Роль: UX/UI Design, фриланс</p>
@@ -52,49 +52,41 @@
   `,"/cases":`
     <section class="page-section mb-12 page--cases">
       <span class="section-heading-cipher" data-text="Кейсы">Кейсы</span>
-      <div class="cases-feed">
-        <a href="/cases/uiren-go" class="case-card">
-          <div class="case-card-banner">
-            <img src="/uiren-go/banner.png" alt="Uiren Go" loading="lazy" />
+      <div class="cases-hover-list">
+        <a href="/cases/uiren-go" class="case-hover-item" data-preview="/uiren-go/banner.png">
+          <div class="case-hover-header">
+            <h3 class="case-hover-title">Uiren Go</h3>
+            <span class="case-hover-arrow" aria-hidden="true">↗</span>
           </div>
-          <div class="case-card-info">
-            <h3 class="case-card-title">Uiren Go</h3>
-            <p class="case-card-desc">Платформа для поиска репетиторов и учебных центров</p>
-            <p class="case-card-role">Роль: Middle Product Designer / Brand Designer</p>
-          </div>
+          <p class="case-hover-desc">Платформа для поиска репетиторов и учебных центров</p>
+          <p class="case-hover-role">Роль: Middle Product Designer / Brand Designer</p>
         </a>
 
-        <a href="/cases/spichka" class="case-card">
-          <div class="case-card-banner">
-            <img src="/spichka/banner.png" alt="Спичка" loading="lazy" />
+        <a href="/cases/spichka" class="case-hover-item" data-preview="/spichka/banner.png">
+          <div class="case-hover-header">
+            <h3 class="case-hover-title">Спичка</h3>
+            <span class="case-hover-arrow" aria-hidden="true">↗</span>
           </div>
-          <div class="case-card-info">
-            <h3 class="case-card-title">Спичка</h3>
-            <p class="case-card-desc">Билетный агрегатор камерных событий</p>
-            <p class="case-card-role">Роль: Junior Product Designer</p>
-          </div>
+          <p class="case-hover-desc">Билетный агрегатор камерных событий</p>
+          <p class="case-hover-role">Роль: Junior Product Designer</p>
         </a>
 
-        <a href="/cases/leadership-academy" class="case-card">
-          <div class="case-card-banner">
-            <img src="/leadership-academy/banner.png" alt="Академия Лидерства" loading="lazy" />
+        <a href="/cases/leadership-academy" class="case-hover-item" data-preview="/leadership-academy/banner.png">
+          <div class="case-hover-header">
+            <h3 class="case-hover-title">Академия Лидерства</h3>
+            <span class="case-hover-arrow" aria-hidden="true">↗</span>
           </div>
-          <div class="case-card-info">
-            <h3 class="case-card-title">Академия Лидерства</h3>
-            <p class="case-card-desc">Лендинг для лагеря лидерских качеств</p>
-            <p class="case-card-role">Роль: UX/UI Design, фриланс</p>
-          </div>
+          <p class="case-hover-desc">Лендинг для лагеря лидерских качеств</p>
+          <p class="case-hover-role">Роль: UX/UI Design, фриланс</p>
         </a>
 
-        <a href="/cases/good-restaurants" class="case-card">
-          <div class="case-card-banner">
-            <img src="/good-restaurants/banner.png" alt="Good Restaurants" loading="lazy" />
+        <a href="/cases/good-restaurants" class="case-hover-item" data-preview="/good-restaurants/banner.png">
+          <div class="case-hover-header">
+            <h3 class="case-hover-title">Good Restaurants</h3>
+            <span class="case-hover-arrow" aria-hidden="true">↗</span>
           </div>
-          <div class="case-card-info">
-            <h3 class="case-card-title">Good Restaurants</h3>
-            <p class="case-card-desc">Единый сайт для четырёх ресторанов</p>
-            <p class="case-card-role">Роль: UX/UI Design, фриланс</p>
-          </div>
+          <p class="case-hover-desc">Единый сайт для четырёх ресторанов</p>
+          <p class="case-hover-role">Роль: UX/UI Design, фриланс</p>
         </a>
       </div>
     </section>
@@ -397,4 +389,8 @@
         <p>Локация: Алматы, Казахстан</p>
       </div>
     </section>
-  `};function i(e){let t=e.replace(/\/index\.html$/,``).replace(/\/$/,``);return t===``?`/`:t}function a(e,t=!0){let a=i(e),s=r[a]||r[`/`],c=document.getElementById(`pageContent`);c&&(c.innerHTML=s),t&&window.location.pathname!==a&&window.history.pushState(null,``,a),window.scrollTo({top:0,behavior:`instant`}),o(a),n()}function o(e){let t=e.startsWith(`/cases`);document.querySelectorAll(`.desktop-nav-link`).forEach(n=>{let r=n.getAttribute(`data-route`);r===`/cases`&&t||r===e?n.classList.add(`active`):n.classList.remove(`active`)}),document.querySelectorAll(`.mobile-nav-link`).forEach(n=>{let r=n.getAttribute(`data-route`);r===`/cases`&&t||r===e?n.classList.add(`active`):n.classList.remove(`active`)})}function s(){document.body.addEventListener(`click`,e=>{let t=e.target.closest(`a`);if(!t)return;let n=t.getAttribute(`href`),r=t.getAttribute(`target`);!n||r===`_blank`||n.startsWith(`mailto:`)||n.startsWith(`http`)||n.startsWith(`/`)&&(e.preventDefault(),a(n,!0))}),window.addEventListener(`popstate`,()=>{a(window.location.pathname,!1)})}function c(){let e=document.getElementById(`themeToggleGroup`),t=document.getElementById(`mobileThemeToggleGroup`),n=document.getElementById(`darkOpt`),r=document.getElementById(`lightOpt`),i=document.getElementById(`mobileDarkOpt`),a=document.getElementById(`mobileLightOpt`),o=document.querySelector(`meta[name="theme-color"]`);function s(e){e?(document.documentElement.classList.add(`dark`),o?.setAttribute(`content`,`#181818`),n?.classList.add(`active`),r?.classList.remove(`active`),i?.classList.add(`active`),a?.classList.remove(`active`),localStorage.setItem(`theme`,`dark`)):(document.documentElement.classList.remove(`dark`),o?.setAttribute(`content`,`#ffffff`),r?.classList.add(`active`),n?.classList.remove(`active`),a?.classList.add(`active`),i?.classList.remove(`active`),localStorage.setItem(`theme`,`light`))}let c=localStorage.getItem(`theme`);s(!c||c===`dark`);function l(e){s(e)}function u(){s(!document.documentElement.classList.contains(`dark`))}n?.addEventListener(`click`,e=>{e.stopPropagation(),l(!0)}),r?.addEventListener(`click`,e=>{e.stopPropagation(),l(!1)}),e?.addEventListener(`click`,u),i?.addEventListener(`click`,e=>{e.stopPropagation(),l(!0)}),a?.addEventListener(`click`,e=>{e.stopPropagation(),l(!1)}),t?.addEventListener(`click`,u)}document.addEventListener(`DOMContentLoaded`,()=>{c(),s(),a(window.location.pathname,!1)});
+  `};function i(e){let t=e.replace(/\/index\.html$/,``).replace(/\/$/,``);return t===``?`/`:t}function a(e,t=!0){let a=i(e),s=r[a]||r[`/`],c=document.getElementById(`pageContent`);c&&(c.innerHTML=s),t&&window.location.pathname!==a&&window.history.pushState(null,``,a),window.scrollTo({top:0,behavior:`instant`}),o(a),n()}function o(e){let t=e.startsWith(`/cases`);document.querySelectorAll(`.desktop-nav-link`).forEach(n=>{let r=n.getAttribute(`data-route`);r===`/cases`&&t||r===e?n.classList.add(`active`):n.classList.remove(`active`)}),document.querySelectorAll(`.mobile-nav-link`).forEach(n=>{let r=n.getAttribute(`data-route`);r===`/cases`&&t||r===e?n.classList.add(`active`):n.classList.remove(`active`)})}function s(){document.body.addEventListener(`click`,e=>{let t=e.target.closest(`a`);if(!t)return;let n=t.getAttribute(`href`),r=t.getAttribute(`target`);!n||r===`_blank`||n.startsWith(`mailto:`)||n.startsWith(`http`)||n.startsWith(`/`)&&(e.preventDefault(),a(n,!0))}),window.addEventListener(`popstate`,()=>{a(window.location.pathname,!1)})}function c(){let e=document.getElementById(`themeToggleGroup`),t=document.getElementById(`mobileThemeToggleGroup`),n=document.getElementById(`darkOpt`),r=document.getElementById(`lightOpt`),i=document.getElementById(`mobileDarkOpt`),a=document.getElementById(`mobileLightOpt`),o=document.querySelector(`meta[name="theme-color"]`);function s(e){e?(document.documentElement.classList.add(`dark`),o?.setAttribute(`content`,`#181818`),n?.classList.add(`active`),r?.classList.remove(`active`),i?.classList.add(`active`),a?.classList.remove(`active`),localStorage.setItem(`theme`,`dark`)):(document.documentElement.classList.remove(`dark`),o?.setAttribute(`content`,`#ffffff`),r?.classList.add(`active`),n?.classList.remove(`active`),a?.classList.add(`active`),i?.classList.remove(`active`),localStorage.setItem(`theme`,`light`))}let c=localStorage.getItem(`theme`);s(!c||c===`dark`);function l(e){s(e)}function u(){s(!document.documentElement.classList.contains(`dark`))}n?.addEventListener(`click`,e=>{e.stopPropagation(),l(!0)}),r?.addEventListener(`click`,e=>{e.stopPropagation(),l(!1)}),e?.addEventListener(`click`,u),i?.addEventListener(`click`,e=>{e.stopPropagation(),l(!0)}),a?.addEventListener(`click`,e=>{e.stopPropagation(),l(!1)}),t?.addEventListener(`click`,u)}function l(){let e=document.getElementById(`cursorPreview`);e||(e=document.createElement(`div`),e.id=`cursorPreview`,e.className=`cursor-preview`,e.innerHTML=`
+      <div class="cursor-preview-inner">
+        <img id="cursorPreviewImg" src="" alt="Preview" />
+      </div>
+    `,document.body.appendChild(e));let t=document.getElementById(`cursorPreviewImg`);function n(t){let n=t.clientX+22,r=t.clientY-115/2;n+270>window.innerWidth-16&&(n=t.clientX-270-22),n<16&&(n=16),r+115>window.innerHeight-16&&(r=window.innerHeight-115-16),r<16&&(r=16),e.style.transform=`translate3d(${n}px, ${r}px, 0)`}document.body.addEventListener(`pointerover`,r=>{let i=r.target.closest(`[data-preview]`);if(!i)return;let a=i.getAttribute(`data-preview`);a&&(t.getAttribute(`src`)!==a&&(t.src=a),n(r),e.classList.add(`active`))}),document.body.addEventListener(`pointermove`,t=>{e.classList.contains(`active`)&&n(t)}),document.body.addEventListener(`pointerout`,t=>{let n=t.target.closest(`[data-preview]`);n&&(t.relatedTarget&&n.contains(t.relatedTarget)||e.classList.remove(`active`))}),document.body.addEventListener(`click`,()=>{e.classList.remove(`active`)})}document.addEventListener(`DOMContentLoaded`,()=>{c(),s(),l(),a(window.location.pathname,!1)});

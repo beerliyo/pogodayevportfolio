@@ -70,7 +70,7 @@ const pages = {
       <div class="space-y-4">
         <div>
           <p class="text-body-p">
-            <a href="/cases/uiren-go" class="font-medium site-link">Uiren Go</a>
+            <a href="/cases/uiren-go" class="font-medium site-link" data-preview="/uiren-go/banner.png">Uiren Go</a>
           </p>
           <p class="text-subtle-p">Платформа для поиска репетиторов и учебных центров</p>
           <p class="text-subtle-p" style="opacity: 0.8;">Роль: Middle Product Designer / Brand Designer</p>
@@ -78,7 +78,7 @@ const pages = {
 
         <div>
           <p class="text-body-p">
-            <a href="/cases/spichka" class="font-medium site-link">Спичка</a>
+            <a href="/cases/spichka" class="font-medium site-link" data-preview="/spichka/banner.png">Спичка</a>
           </p>
           <p class="text-subtle-p">Билетный агрегатор камерных событий</p>
           <p class="text-subtle-p" style="opacity: 0.8;">Роль: Junior Product Designer</p>
@@ -86,7 +86,7 @@ const pages = {
 
         <div>
           <p class="text-body-p">
-            <a href="/cases/leadership-academy" class="font-medium site-link">Академия Лидерства</a>
+            <a href="/cases/leadership-academy" class="font-medium site-link" data-preview="/leadership-academy/banner.png">Академия Лидерства</a>
           </p>
           <p class="text-subtle-p">Лендинг для лагеря лидерских качеств</p>
           <p class="text-subtle-p" style="opacity: 0.8;">Роль: UX/UI Design, фриланс</p>
@@ -94,7 +94,7 @@ const pages = {
 
         <div>
           <p class="text-body-p">
-            <a href="/cases/good-restaurants" class="font-medium site-link">Good Restaurants</a>
+            <a href="/cases/good-restaurants" class="font-medium site-link" data-preview="/good-restaurants/banner.png">Good Restaurants</a>
           </p>
           <p class="text-subtle-p">Единый сайт для четырёх ресторанов</p>
           <p class="text-subtle-p" style="opacity: 0.8;">Роль: UX/UI Design, фриланс</p>
@@ -106,49 +106,41 @@ const pages = {
   "/cases": `
     <section class="page-section mb-12 page--cases">
       <span class="section-heading-cipher" data-text="Кейсы">Кейсы</span>
-      <div class="cases-feed">
-        <a href="/cases/uiren-go" class="case-card">
-          <div class="case-card-banner">
-            <img src="/uiren-go/banner.png" alt="Uiren Go" loading="lazy" />
+      <div class="cases-hover-list">
+        <a href="/cases/uiren-go" class="case-hover-item" data-preview="/uiren-go/banner.png">
+          <div class="case-hover-header">
+            <h3 class="case-hover-title">Uiren Go</h3>
+            <span class="case-hover-arrow" aria-hidden="true">↗</span>
           </div>
-          <div class="case-card-info">
-            <h3 class="case-card-title">Uiren Go</h3>
-            <p class="case-card-desc">Платформа для поиска репетиторов и учебных центров</p>
-            <p class="case-card-role">Роль: Middle Product Designer / Brand Designer</p>
-          </div>
+          <p class="case-hover-desc">Платформа для поиска репетиторов и учебных центров</p>
+          <p class="case-hover-role">Роль: Middle Product Designer / Brand Designer</p>
         </a>
 
-        <a href="/cases/spichka" class="case-card">
-          <div class="case-card-banner">
-            <img src="/spichka/banner.png" alt="Спичка" loading="lazy" />
+        <a href="/cases/spichka" class="case-hover-item" data-preview="/spichka/banner.png">
+          <div class="case-hover-header">
+            <h3 class="case-hover-title">Спичка</h3>
+            <span class="case-hover-arrow" aria-hidden="true">↗</span>
           </div>
-          <div class="case-card-info">
-            <h3 class="case-card-title">Спичка</h3>
-            <p class="case-card-desc">Билетный агрегатор камерных событий</p>
-            <p class="case-card-role">Роль: Junior Product Designer</p>
-          </div>
+          <p class="case-hover-desc">Билетный агрегатор камерных событий</p>
+          <p class="case-hover-role">Роль: Junior Product Designer</p>
         </a>
 
-        <a href="/cases/leadership-academy" class="case-card">
-          <div class="case-card-banner">
-            <img src="/leadership-academy/banner.png" alt="Академия Лидерства" loading="lazy" />
+        <a href="/cases/leadership-academy" class="case-hover-item" data-preview="/leadership-academy/banner.png">
+          <div class="case-hover-header">
+            <h3 class="case-hover-title">Академия Лидерства</h3>
+            <span class="case-hover-arrow" aria-hidden="true">↗</span>
           </div>
-          <div class="case-card-info">
-            <h3 class="case-card-title">Академия Лидерства</h3>
-            <p class="case-card-desc">Лендинг для лагеря лидерских качеств</p>
-            <p class="case-card-role">Роль: UX/UI Design, фриланс</p>
-          </div>
+          <p class="case-hover-desc">Лендинг для лагеря лидерских качеств</p>
+          <p class="case-hover-role">Роль: UX/UI Design, фриланс</p>
         </a>
 
-        <a href="/cases/good-restaurants" class="case-card">
-          <div class="case-card-banner">
-            <img src="/good-restaurants/banner.png" alt="Good Restaurants" loading="lazy" />
+        <a href="/cases/good-restaurants" class="case-hover-item" data-preview="/good-restaurants/banner.png">
+          <div class="case-hover-header">
+            <h3 class="case-hover-title">Good Restaurants</h3>
+            <span class="case-hover-arrow" aria-hidden="true">↗</span>
           </div>
-          <div class="case-card-info">
-            <h3 class="case-card-title">Good Restaurants</h3>
-            <p class="case-card-desc">Единый сайт для четырёх ресторанов</p>
-            <p class="case-card-role">Роль: UX/UI Design, фриланс</p>
-          </div>
+          <p class="case-hover-desc">Единый сайт для четырёх ресторанов</p>
+          <p class="case-hover-role">Роль: UX/UI Design, фриланс</p>
         </a>
       </div>
     </section>
@@ -614,9 +606,83 @@ function setupThemeSwitcher() {
   mobileGroup?.addEventListener("click", toggle);
 }
 
+/**
+ * Floating Cursor Hover Preview
+ */
+function initCursorPreview() {
+  let previewEl = document.getElementById("cursorPreview");
+  if (!previewEl) {
+    previewEl = document.createElement("div");
+    previewEl.id = "cursorPreview";
+    previewEl.className = "cursor-preview";
+    previewEl.innerHTML = `
+      <div class="cursor-preview-inner">
+        <img id="cursorPreviewImg" src="" alt="Preview" />
+      </div>
+    `;
+    document.body.appendChild(previewEl);
+  }
+
+  const previewImg = document.getElementById("cursorPreviewImg");
+  const width = 270;
+  const height = 115;
+  const offset = 22;
+
+  function updatePos(e) {
+    let x = e.clientX + offset;
+    let y = e.clientY - height / 2;
+
+    if (x + width > window.innerWidth - 16) {
+      x = e.clientX - width - offset;
+    }
+    if (x < 16) x = 16;
+
+    if (y + height > window.innerHeight - 16) {
+      y = window.innerHeight - height - 16;
+    }
+    if (y < 16) y = 16;
+
+    previewEl.style.transform = `translate3d(${x}px, ${y}px, 0)`;
+  }
+
+  document.body.addEventListener("pointerover", (e) => {
+    const target = e.target.closest("[data-preview]");
+    if (!target) return;
+
+    const imgUrl = target.getAttribute("data-preview");
+    if (!imgUrl) return;
+
+    if (previewImg.getAttribute("src") !== imgUrl) {
+      previewImg.src = imgUrl;
+    }
+
+    updatePos(e);
+    previewEl.classList.add("active");
+  });
+
+  document.body.addEventListener("pointermove", (e) => {
+    if (!previewEl.classList.contains("active")) return;
+    updatePos(e);
+  });
+
+  document.body.addEventListener("pointerout", (e) => {
+    const target = e.target.closest("[data-preview]");
+    if (!target) return;
+
+    if (e.relatedTarget && target.contains(e.relatedTarget)) return;
+
+    previewEl.classList.remove("active");
+  });
+
+  document.body.addEventListener("click", () => {
+    previewEl.classList.remove("active");
+  });
+}
+
 // Initial Bootstrap
 document.addEventListener("DOMContentLoaded", () => {
   setupThemeSwitcher();
   setupLinksRouting();
+  initCursorPreview();
   renderRoute(window.location.pathname, false);
 });
